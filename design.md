@@ -6,7 +6,7 @@ Buscando ter uma maturidade na implementação o modelo utilizado está sendo ba
 
 ## **Agnostic Presentation Design**
 
-Agnostic Presentation Design \(Design de Apresentação Agnóstica\) é o nome da abordagem que visa criar estruturas de dados para criar as apresentações. Abaixo você pode ver um modelo de como esse padrão funciona.
+Agnostic Presentation Design \(Design de Apresentação Agnóstica\) é o nome da abordagem que visa criar estruturas de dados para criar as apresentações independente do framework utilizado para apresentação. Abaixo você pode ver um modelo de como esse padrão funciona.
 
 ![Figura 1: modelo b&#xE1;sico de apresenta&#xE7;&#xE3;o](.gitbook/assets/image%20%281%29.png)
 
@@ -22,7 +22,7 @@ Você pode reusar sua rotina em variados cenários diferentes. Você pode mudar 
 
 ### O esboço
 
-O esboço \(_Schema_\) é um recurso que agrupa as propriedades do domínio da entidade e especifica seu comportamento. O esboço \(classe, módulo ou qualquer outra estrutura de dados escolhida\) principal será capaz de fornecer um conjunto mínimo de recursos para construir o objetivo principal de sua natureza. Deve ser extensível e fornecer gateways para ser especializado em contextos específicos.
+O esboço \(_Schema_\) é um recurso que agrupa as propriedades do domínio da entidade e especifica seu comportamento. O esboço principal \(classe, módulo ou qualquer outra estrutura de dados escolhida\) será capaz de fornecer um conjunto mínimo de recursos para construir o objetivo principal de sua natureza. Deve ser extensível e fornecer gateways para ser especializado em contextos específicos.
 
 Os comportamentos da estrutura do esboço são projetados para serem executados em outros escopos. Portanto, a base do projeto deve ser capaz de manter os recursos fornecidos pelo esboço disponíveis nos comportamentos criados para ele.
 
