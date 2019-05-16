@@ -1,7 +1,7 @@
 # Lógica primitiva
 
 {% hint style="info" %}
-Os exemplos são meramente ilustrativos, e tentam reproduzir o que nossa experiência em contato com outros desenvolvedores tem demonstrado.
+Os exemplos são meramente ilustrativos e tentam reproduzir o que nossa experiência em contato com outros desenvolvedores tem demonstrado.
 {% endhint %}
 
 ### A abordagem tradicional
@@ -79,7 +79,7 @@ Para ter um resultado semelhante à:
 
 ![Exemplo dispon&#xED;vel em https://jsfiddle.net/wilcorrea/oaf3gedr](../.gitbook/assets/image%20%283%29.png)
 
-Como podemos ver acima, há alguma separação entre a apresentação \(o HTML\) e os comportamentos \(o Javascript\) na abordagem tradicional quando é feita dessa forma. Seria possível reusar o arquivo `script.js` desde que o novo `index.html` se comprometesse à manter uma estrutura parecida com a desta primeira versão.
+Como podemos ver acima, há separação entre a apresentação \(o HTML\) e os comportamentos \(o Javascript\) na abordagem tradicional quando é feita dessa forma. Seria possível reusar o arquivo `script.js` desde que o novo `index.html` se comprometesse à manter uma estrutura parecida com a desta primeira versão.
 
 ### Como os componentes Vue têm sido construídos
 
