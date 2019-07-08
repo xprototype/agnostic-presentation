@@ -14,7 +14,7 @@ O modelo acima mostra como são separadas as responsabilidades dentro do ciclo d
 
 ### Como isso funciona
 
-O Agnostic Presentation Design irá guiá-lo para não usar a lógica de negócios dentro de seus componentes. O mantra é manter a _\*\*_estratégia de apresentação apenas como uma camada de visualização e não permitir que lógicas de negócio sejam aplicadas nessa camada.
+O Agnostic Presentation Design irá guiá-lo para não usar a lógica de negócios dentro de seus componentes. O mantra é manter a **estratégia de apresentação** apenas como uma camada de visualização e não permitir que lógicas de negócio sejam aplicadas nessa camada.
 
 Ao tentar fazer isso é comum ter problemas com a relação entre o local onde eventos e outras rotinas são declaradas e onde são realizadas de fato. O APD busca minimizar a lacuna criada por essa estratégia com o gerenciamento do escopo. Assim, você declara imperativamente suas propriedades e seus comportamentos em uma estrutura que representa o esboço do componente em questão e essa estrutura será associada ao componente que será renderizado da maneira mais conveniente.
 
