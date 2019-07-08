@@ -1,12 +1,12 @@
 # O Design
 
-No [Skeleton Quasar](https://github.com/xprototype/skeleton-quasar) foi adotado um design que fornece modelos de abstrações que podem ser usadas para desacoplar seu código do código framework que será utilizado para a apresentação. O projeto como um todo possui opções de uso para roteadores, organização de componentes e modularização na base de código deste projeto, mas elas farão sentido com o contexto que será apresentado.
+No [Skeleton Quasar](https://github.com/xprototype/skeleton-quasar) foi adotado um design que fornece modelos de abstrações que podem ser usadas para desacoplar seu código da apresentação \(frameworks CSS e Javascript\) que será utilizada para a apresentação. O projeto como um todo possui opções de uso para roteadores, organização de componentes e modularização na base de código deste projeto, mas elas farão sentido com o contexto que será apresentado.
 
 Buscando ter uma maturidade na implementação o modelo utilizado está sendo batizado de **Agnostic Presentation Design** \(_APD_\) e veremos mais detalhes sobre ele à seguir.
 
 ## **Agnostic Presentation Design**
 
-Agnostic Presentation Design \(Design de Apresentação Agnóstica\) é o nome da abordagem que visa criar estruturas de dados para criar as apresentações independente do framework utilizado para apresentação. Abaixo você pode ver um modelo de como esse padrão funciona.
+Agnostic Presentation Design \(Design de Apresentação Agnóstica\) é o nome da abordagem que visa criar estruturas de dados para criar as apresentações independente das ferramentas utilizadas para apresentação. Abaixo você pode ver um modelo de como esse padrão funciona.
 
 ![Figura 1: modelo b&#xE1;sico de apresenta&#xE7;&#xE3;o](.gitbook/assets/image%20%281%29.png)
 
@@ -14,7 +14,7 @@ O modelo acima mostra como são separadas as responsabilidades dentro do ciclo d
 
 ### Como isso funciona
 
-O Agnostic Presentation Design irá guiá-lo para não usar a lógica de negócios dentro de seus componentes. O mantra é manter a ****estratégia de apresentação apenas como uma camada de visualização e não permitir que lógicas de negócio sejam aplicadas nessa camada.
+O Agnostic Presentation Design irá guiá-lo para não usar a lógica de negócios dentro de seus componentes. O mantra é manter a _\*\*_estratégia de apresentação apenas como uma camada de visualização e não permitir que lógicas de negócio sejam aplicadas nessa camada.
 
 Ao tentar fazer isso é comum ter problemas com a relação entre o local onde eventos e outras rotinas são declaradas e onde são realizadas de fato. O APD busca minimizar a lacuna criada por essa estratégia com o gerenciamento do escopo. Assim, você declara imperativamente suas propriedades e seus comportamentos em uma estrutura que representa o esboço do componente em questão e essa estrutura será associada ao componente que será renderizado da maneira mais conveniente.
 
@@ -36,7 +36,7 @@ O primeiro passo para exemplificar a estratégia de APD será criar um arquivo p
 
 ```javascript
 const serviceStarWars = () => {
-	return fetch('https://swapi.co/api/people/')
+    return fetch('https://swapi.co/api/people/')
       .then(response => response.json()
       .then((data) => data.results))
 }
@@ -53,7 +53,7 @@ const businessLogicStarWars = () => {
       label: 'Home World',
       type: String,
       format (value, row) {
-      	return `<a href="${value}" target="_blank">${value}</a>`
+          return `<a href="${value}" target="_blank">${value}</a>`
       }
     },
     name: {
@@ -82,7 +82,7 @@ const tableStarWars = () => ({
     }
   }),
   methods: {
-  	receive (rows) {
+      receive (rows) {
       this.setRows(rows)
     },
     setRows (rows) {
@@ -90,7 +90,7 @@ const tableStarWars = () => ({
     }
   },
   mounted () {
-  	serviceStarWars().then(this.receive)
+      serviceStarWars().then(this.receive)
   }
 })
 ```
@@ -134,10 +134,10 @@ Um _**Container Component**_ é um componente agnóstico. Ele provavelmente ser�
   Vue.component('app-table', {
     template: '#app-table',
     props: {
-    	columns: {
+        columns: {
         type: Object
       },
-    	rows: {
+        rows: {
         type: Array
       }
     }
@@ -151,7 +151,7 @@ Os exemplos passados são, por razões óbvias, o mais simples possível, porém
 new Vue({
   el: "#app",
   components: {
-  	TableStarWars: tableStarWars()
+      TableStarWars: tableStarWars()
   }
 })
 ```

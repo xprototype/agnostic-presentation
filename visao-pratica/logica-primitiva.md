@@ -4,7 +4,7 @@
 Os exemplos são meramente ilustrativos e tentam reproduzir o que nossa experiência em contato com outros desenvolvedores tem demonstrado.
 {% endhint %}
 
-### A abordagem tradicional
+## A abordagem tradicional
 
 Imagine que sua aplicação deve alternar a visibilidade do campo de _CPF_ e _CNPJ_ com base no campo _Tipo de Pessoa_ que pode ser _Pessoa Física_ ou _Pessoa Jurídica_. Em uma abordagem tradicional usando tecnologia web teríamos algo parecido com os trechos à seguir.
 
@@ -81,7 +81,7 @@ Para ter um resultado semelhante à:
 
 Como podemos ver acima, há separação entre a apresentação \(o HTML\) e os comportamentos \(o Javascript\) na abordagem tradicional quando é feita dessa forma. Seria possível reusar o arquivo `script.js` desde que o novo `index.html` se comprometesse à manter uma estrutura parecida com a desta primeira versão.
 
-### Como os componentes Vue têm sido construídos
+## Como os componentes Vue têm sido construídos
 
 Ao migrar o exemplo anterior para componentes não é incomum termos algo parecido com o que será mostrado à seguir.
 
@@ -126,8 +126,8 @@ Ao migrar o exemplo anterior para componentes não é incomum termos algo pareci
 <script>
 export default {
   data: () => ({
-  	selected: '',
-	personType: '',
+      selected: '',
+    personType: '',
     CPF: '',
     CNPJ: ''
   }),
