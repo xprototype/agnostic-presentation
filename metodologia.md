@@ -16,7 +16,7 @@ Essa parte primitiva do componente faz parte do escopo dele e não deveria se mi
 
 Este grupo é responsável por toda a lógica de negócio que o sistema gerencia.  Os nomes dos campos, os serviços executados para gerenciar os dados. Os domínios que a aplicação gerencia ficam todos aqui.  Um exemplo clássico é o de cadastro de pessoa. Quando temos que determinar que o cadastro de pessoa jurídica deve usar CNPJ e o de pessoa física isso é inerente da regra de negócio e isso deve ser mapeado nos componentes que usaremos.
 
-Enquanto pensamos em APD temos que pensar que os componentes representam esses estados o que é diferente de ser esse estado. Sendo assim a lógica de negócio não fica incorporado dentro dos arquivos de componentes, ela é isolada em documentos da linguagem base da aplicação, indiferente da sua escolha de apresentação.
+Enquanto pensamos em APD temos que pensar que os componentes representam esses estados, o que é diferente de ser esse estado. Sendo assim a lógica de negócio não fica incorporado dentro dos arquivos de componentes, ela é isolada em documentos da linguagem base da aplicação \(no caso estamos usando Javascript como exemplo, mas poderíamos estar falando de qualquer linguagem\), indiferente da sua escolha de apresentação.
 
 ### Configurações circunstancias
 
