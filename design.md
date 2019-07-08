@@ -18,7 +18,7 @@ O Agnostic Presentation Design irá guiá-lo para não usar a lógica de negóci
 
 Ao tentar fazer isso é comum ter problemas com a relação entre o local onde eventos e outras rotinas são declaradas e onde são realizadas de fato. O APD busca minimizar a lacuna criada por essa estratégia com o gerenciamento do escopo. Assim, você declara imperativamente suas propriedades e seus comportamentos em uma estrutura que representa o esboço do componente em questão e essa estrutura será associada ao componente que será renderizado da maneira mais conveniente.
 
-Você pode reusar sua rotina em variados cenários diferentes. Você pode mudar sua camada de apresentação inteira tendo como única premissa manter os contratos e comportamentos da anterior. Pode usar outro framework diferente do Quasar e pode usar outras ferramentas de renderização como React e outros com um impacto reduzido sobre o projeto.
+Você pode reusar sua rotina em variados cenários diferentes. Você pode mudar sua camada de apresentação inteira tendo como única premissa manter os contratos e comportamentos da anterior. Pode usar outro framework diferente do Quasar e pode usar outras ferramentas de renderização como React e outras com um impacto reduzido sobre o projeto.
 
 ### O esboço
 
