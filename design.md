@@ -28,7 +28,7 @@ Os comportamentos da estrutura do esboço são projetados para serem executados 
 
 ![Figura 2: diagrama de vis&#xE3;o geral da apresenta&#xE7;&#xE3;o usando APD](.gitbook/assets/image%20%282%29.png)
 
-Como você pode ver na imagem acima, para dizer o que um projeto implementa _Agnostic Presentation Design_ requer uma camada dedicada para fornecer os recursos definidos no esboço para a camada de renderização da tela. Essa camada intermediária pode variar de framework de componentes ou de framework de renderização. Um projeto APD pode ter sua lógica de negócio sendo usada em Vue ou React sem muitos problemas, já que haverá uma gateway e uma cadeia de componentes preparados para isso.
+Como você pode ver na imagem acima, para dizer o que um projeto implementa _Agnostic Presentation Design_ irá requerer a existência de uma camada dedicada para fornecer os recursos definidos no esboço para a camada de renderização da tela. Essa camada intermediária pode variar de framework de componentes ou de framework de renderização. Um projeto APD pode ter sua lógica de negócio sendo usada em Vue ou React sem muitos problemas, já que haverá uma gateway e uma cadeia de componentes preparados para isso.
 
 ### Exemplos práticos
 
