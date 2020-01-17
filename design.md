@@ -158,35 +158,3 @@ new Vue({
 
 Para ver tudo isso funcionando podemos fazer isso e montar nosso componente controlador. O exemplo funcional está disponível nesse [link aqui](https://jsfiddle.net/wilcorrea/rja5pe7c).
 
-{% api-method method="get" host="" path="" %}
-{% api-method-summary %}
-dadadad
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
